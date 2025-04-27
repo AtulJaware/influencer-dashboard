@@ -95,10 +95,16 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-xl font-bold mb-4 text-gray-800 dark:text-gray-100">Contact</h3>
             <ul className="space-y-2">
-              <li className="flex items-center space-x-2 text-gray-600 dark:text-gray-300">
-                <Mail size={18} />
-                <span>pratikjawareofficial@gmail.com</span>
-              </li>
+            <li className="flex items-center space-x-2 text-gray-600 dark:text-gray-300">
+  <Mail size={18} />
+  <a 
+    href="mailto:pratikjawareofficial@gmail.com" 
+    className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
+  >
+    pratikjawareofficial@gmail.com
+  </a>
+</li>
+
               <li className="flex items-center space-x-2 text-gray-600 dark:text-gray-300">
                 <Phone size={18} />
                 <span>+91 **********</span>
