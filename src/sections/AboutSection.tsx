@@ -1,5 +1,6 @@
 import React from 'react';
 import { Camera, VideoIcon, Award, Globe } from 'lucide-react';
+import studioImage from '../images/studio.webp'; 
 
 const AboutSection: React.FC = () => {
   const stats = [
@@ -27,7 +28,7 @@ const AboutSection: React.FC = () => {
           <div className="relative">
             <div className="rounded-lg overflow-hidden shadow-xl">
               <img 
-                src="/src/images/studio.webp" 
+                src={studioImage}
                 alt="Pratik Jaware" 
                 className="w-full h-auto object-cover transform transition-transform duration-500 hover:scale-105"
               />

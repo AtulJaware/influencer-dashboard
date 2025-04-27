@@ -1,10 +1,14 @@
 import { Collaboration } from '../types/types';
+import SMA from '../images/SMA.jpg'; 
+import sanskruti from '../images/sanskruti.jpg'; 
+import mihani from '../images/mihani.jpg'; 
+import pjmens from '../images/pjmens.jpg'; 
 
 export const collaborations: Collaboration[] = [
   {
     id: '1',
     brandName: 'mahalaxmialankar',
-    logo: '/src/images/SMA.jpg',
+    logo: SMA,
     campaign: 'Shree Mahalaxmi Alankar',
     date: '2025-04-18',
     engagement: {
@@ -18,7 +22,7 @@ export const collaborations: Collaboration[] = [
   {
     id: '2',
     brandName: 'sanskruti_selection',
-    logo: '/src/images/sanskruti.jpg',
+    logo: sanskruti,
     campaign: 'Sanskruti Selection Nandura',
     date: '2025-04-13',
     engagement: {
@@ -32,7 +36,7 @@ export const collaborations: Collaboration[] = [
   {
     id: '3',
     brandName: 'mihanienterprises01',
-    logo: '/src/images/mihani.jpg',
+    logo: mihani,
     campaign: 'MIHANI ENTERPRISES',
     date: '2025-03-22',
     engagement: {
@@ -46,7 +50,7 @@ export const collaborations: Collaboration[] = [
   {
     id: '4',
     brandName: 'pj_mens_wear',
-    logo: '/src/images/pjmens.jpg',
+    logo: pjmens,
     campaign: 'The Perfect Mens Wear',
     date: '2025-01-18',
     engagement: {
