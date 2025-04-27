@@ -12,7 +12,7 @@ const GallerySection: React.FC = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Take a look at some of my best work and content creation style.
+            Take a look at some of my gallery pictures.
           </p>
         </div>
         

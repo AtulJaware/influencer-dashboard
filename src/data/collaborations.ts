@@ -3,58 +3,58 @@ import { Collaboration } from '../types/types';
 export const collaborations: Collaboration[] = [
   {
     id: '1',
-    brandName: 'FitGenix',
-    logo: 'https://images.pexels.com/photos/2746187/pexels-photo-2746187.jpeg?auto=compress&cs=tinysrgb&h=100',
-    campaign: 'Summer Fitness Collection',
-    date: '2024-06-15',
+    brandName: 'mahalaxmialankar',
+    logo: '/src/images/SMA.jpg',
+    campaign: 'Shree Mahalaxmi Alankar',
+    date: '2025-04-18',
     engagement: {
-      impressions: 250000,
-      likes: 34500,
-      comments: 1200,
-      shares: 3500
+      impressions: 1104720,
+      likes: 51700,
+      comments: 346,
+      shares: 1368
     },
-    link: 'https://www.instagram.com/p/abc123'
+    link: 'https://www.instagram.com/mahalaxmialankar'
   },
   {
     id: '2',
-    brandName: 'TechVision',
-    logo: 'https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&h=100',
-    campaign: 'NextGen Smartphone Launch',
-    date: '2024-05-10',
+    brandName: 'sanskruti_selection',
+    logo: '/src/images/sanskruti.jpg',
+    campaign: 'Sanskruti Selection Nandura',
+    date: '2025-04-13',
     engagement: {
-      impressions: 320000,
-      likes: 42000,
-      comments: 2100,
-      shares: 5200
+      impressions: 694873,
+      likes: 38806,
+      comments: 742,
+      shares: 547
     },
-    link: 'https://www.youtube.com/watch?v=xyz456'
+    link: 'https://www.instagram.com/sanskruti_selection'
   },
   {
     id: '3',
-    brandName: 'TravelEase',
-    logo: 'https://images.pexels.com/photos/1051075/pexels-photo-1051075.jpeg?auto=compress&cs=tinysrgb&h=100',
-    campaign: 'Vacation Essentials',
-    date: '2024-04-22',
+    brandName: 'mihanienterprises01',
+    logo: '/src/images/mihani.jpg',
+    campaign: 'MIHANI ENTERPRISES',
+    date: '2025-03-22',
     engagement: {
-      impressions: 180000,
+      impressions: 780200,
       likes: 28000,
       comments: 980,
       shares: 2100
     },
-    link: 'https://www.instagram.com/p/def789'
+    link: 'https://www.instagram.com/mihanienterprises01'
   },
   {
     id: '4',
-    brandName: 'GourmetDelight',
-    logo: 'https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&h=100',
-    campaign: 'Gourmet Home Cooking',
-    date: '2024-03-18',
+    brandName: 'pj_mens_wear',
+    logo: '/src/images/pjmens.jpg',
+    campaign: 'The Perfect Mens Wear',
+    date: '2025-01-18',
     engagement: {
-      impressions: 210000,
-      likes: 31000,
-      comments: 1500,
-      shares: 4200
+      impressions: 1600000,
+      likes: 30500,
+      comments: 648,
+      shares: 780
     },
-    link: 'https://www.youtube.com/watch?v=ghi101'
+    link: 'https://www.instagram.com/pj_mens_wear'
   }
 ];

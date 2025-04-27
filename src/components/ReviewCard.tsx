@@ -7,7 +7,7 @@ interface ReviewCardProps {
 }
 
 const ReviewCard: React.FC<ReviewCardProps> = ({ review }) => {
-  const { name, position, company, avatar, content, rating } = review;
+  const { name, company, avatar, content, rating } = review;
   
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transition-all duration-300 hover:shadow-lg">
@@ -19,8 +19,7 @@ const ReviewCard: React.FC<ReviewCardProps> = ({ review }) => {
         />
         <div>
           <h4 className="text-lg font-semibold text-gray-800 dark:text-white">{name}</h4>
-          <p className="text-sm text-gray-600 dark:text-gray-400">
-            {position} at {company}
+          <p className="text-sm text-gray-600 dark:text-gray-400"> {company}
           </p>
         </div>
       </div>

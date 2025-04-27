@@ -34,7 +34,6 @@ export interface Theme {
 export interface Review {
   id: string;
   name: string;
-  position: string;
   company: string;
   avatar: string;
   content: string;

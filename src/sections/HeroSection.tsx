@@ -1,5 +1,7 @@
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
+import heroImage from '../images/hero-image.jpg'; 
+
 
 const HeroSection: React.FC = () => {
   return (
@@ -7,10 +9,9 @@ const HeroSection: React.FC = () => {
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center z-0"
-        style={{ 
-          backgroundImage: "url('https://ziplinemybrand.com/wp-content/uploads/2025/01/January_Zipline-Blog-Post-Image.jpg')", 
-          backgroundPosition: "50% 30%",
-        }}
+        style={{ backgroundImage: `url(${heroImage})`, backgroundPosition: '50% 30%' 
+      }}
+
       >
         <div className="absolute inset-0 bg-black/60 dark:bg-black/70 transition-colors duration-300"></div>
       </div>

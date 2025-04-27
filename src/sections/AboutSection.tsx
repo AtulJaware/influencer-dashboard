@@ -27,7 +27,7 @@ const AboutSection: React.FC = () => {
           <div className="relative">
             <div className="rounded-lg overflow-hidden shadow-xl">
               <img 
-                src="https://images.pexels.com/photos/2531552/pexels-photo-2531552.jpeg?auto=compress&cs=tinysrgb&h=650" 
+                src="/src/images/studio.webp" 
                 alt="Pratik Jaware" 
                 className="w-full h-auto object-cover transform transition-transform duration-500 hover:scale-105"
               />
@@ -46,7 +46,7 @@ const AboutSection: React.FC = () => {
               trusts my recommendations and engages with the content I create.
             </p>
             <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-              My audience is primarily 18-34 years old, tech-savvy, and interested in travel, 
+              My audience is primarily 15-45 years old, tech-savvy, and interested in travel, 
               technology, lifestyle products, and authentic experiences. When I partner with brands, 
               I focus on creating content that naturally integrates your message while maintaining the 
               authenticity my audience expects.

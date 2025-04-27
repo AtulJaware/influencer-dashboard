@@ -8,7 +8,6 @@ interface GalleryProps {
 
 const Gallery: React.FC<GalleryProps> = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -19,43 +18,42 @@ const Gallery: React.FC<GalleryProps> = ({ images }) => {
   }, [currentIndex]);
 
   const nextSlide = () => {
-    if (!isTransitioning) {
-      setIsTransitioning(true);
-      setCurrentIndex((prev) => (prev + 1) % images.length);
-      setTimeout(() => setIsTransitioning(false), 500);
-    }
+    setCurrentIndex((prev) => (prev + 1) % images.length);
   };
 
   const prevSlide = () => {
-    if (!isTransitioning) {
-      setIsTransitioning(true);
-      setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
-      setTimeout(() => setIsTransitioning(false), 500);
-    }
+    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
   };
 
   return (
-    <div className="relative w-full h-[600px] overflow-hidden rounded-lg">
-      {/* Main Image */}
-      <div 
-        className={`absolute inset-0 transition-transform duration-500 ease-in-out ${
-          isTransitioning ? 'opacity-90' : 'opacity-100'
-        }`}
-        style={{
-          backgroundImage: `url(${images[currentIndex].url})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}
+    <div className="relative w-full overflow-hidden rounded-lg h-[600px]">
+      {/* Slides Container */}
+      <div
+        className="flex transition-transform duration-700 ease-in-out h-full"
+        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
-        <div className="absolute inset-0 bg-black/30"></div>
-      </div>
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className="flex-shrink-0 w-full h-full relative"
+          >
+            <img
+              src={image.url}
+              alt={image.title}
+              className="w-full h-full object-contain bg-black"
+            />
+            {/* Dark overlay */}
+            <div className="absolute inset-0 bg-black/30"></div>
 
-      {/* Content */}
-      <div className="absolute inset-0 flex items-end justify-start p-8 z-10">
-        <div className="text-white max-w-2xl">
-          <h3 className="text-2xl font-bold mb-2">{images[currentIndex].title}</h3>
-          <p className="text-lg text-gray-200">{images[currentIndex].description}</p>
-        </div>
+            {/* Content */}
+            <div className="absolute inset-0 flex items-end justify-start p-8 z-10">
+              <div className="text-white max-w-2xl">
+                <h3 className="text-2xl font-bold mb-2">{image.title}</h3>
+                <p className="text-lg text-gray-200">{image.description}</p>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
 
       {/* Navigation Buttons */}

@@ -63,7 +63,7 @@ const Header: React.FC<HeaderProps> = ({ theme }) => {
             <Instagram size={24} />
           </a>
           <a 
-            href="https://youtube.com/c/PratikjawareVlogs" 
+            href="https://www.youtube.com/@pratikjawareVlogs" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-gray-700 dark:text-gray-200 hover:text-red-600 dark:hover:text-red-400 transition-colors"
