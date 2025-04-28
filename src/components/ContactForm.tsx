@@ -124,11 +124,11 @@ const ContactForm: React.FC = () => {
               className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-gray-700 text-gray-800 dark:text-white transition-colors duration-300"
             >
               <option value="">Select a range</option>
-              <option value="<1000">Under 10,000</option>
-              <option value="1000-3000">10,000 - 15,000</option>
-              <option value="3000-5000">15,000 - 20,000</option>
-              <option value="5000-10000">20,000 - 25,000</option>
-              <option value=">10000">25,000+</option>
+              <option value="Under 10,000">Under 10,000</option>
+              <option value="10,000 - 15,000">10,000 - 15,000</option>
+              <option value="15,000 - 20,000">15,000 - 20,000</option>
+              <option value="20,000 - 25,000">20,000 - 25,000</option>
+              <option value="25,000+">25,000+</option>
             </select>
           </div>
         </div>
