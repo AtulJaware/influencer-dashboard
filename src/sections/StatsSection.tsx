@@ -30,20 +30,23 @@ const StatsSection: React.FC = () => {
         ) : stats ? (
           <>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <a href="https://www.instagram.com/pratik.jaware.patil" target="_blank" rel="noopener noreferrer">
               <StatCard
                 title="Instagram Followers"
                 value={stats.instagram.followers}
                 icon={<Instagram size={24} />}
                 color="bg-gradient-to-r from-pink-500 to-purple-500"
-              />
+              /> </a>
               
+              <a href="https://www.instagram.com/pratik.jaware.patil" target="_blank" rel="noopener noreferrer">
               <StatCard
                 title="Instagram Posts"
                 value={stats.instagram.posts}
                 icon={<Zap size={24} />}
                 color="bg-gradient-to-r from-purple-500 to-indigo-500"
-              />
+              /> </a>
               
+              <a href="https://www.instagram.com/pratik.jaware.patil" target="_blank" rel="noopener noreferrer">
               <StatCard
                 title="Instagram Engagement"
                 value={stats.instagram.engagement}
@@ -51,29 +54,32 @@ const StatsSection: React.FC = () => {
                 suffix="%"
                 description="Average engagement rate per post"
                 color="bg-gradient-to-r from-indigo-500 to-blue-500"
-              />
+              /> </a>
               
+              <a href="https://www.youtube.com/channel/UCfxMmGt0QZbJYCwrdUANdYA" target="_blank" rel="noopener noreferrer">
               <StatCard
                 title="YouTube Subscribers"
                 value={stats.youtube.subscribers}
                 icon={<Youtube size={24} />}
                 color="bg-gradient-to-r from-red-500 to-pink-500"
-              />
+              /> </a>
               
+              <a href="https://www.youtube.com/channel/UCfxMmGt0QZbJYCwrdUANdYA" target="_blank" rel="noopener noreferrer">
               <StatCard
                 title="YouTube Videos"
                 value={stats.youtube.videos}
                 icon={<Video size={24} />}
                 color="bg-gradient-to-r from-yellow-500 to-red-500"
-              />
+              /> </a>
               
+              <a href="https://www.youtube.com/channel/UCfxMmGt0QZbJYCwrdUANdYA" target="_blank" rel="noopener noreferrer">
               <StatCard
                 title="YouTube Views"
                 value={stats.youtube.views}
                 icon={<Eye size={24} />}
                 description="Total views across all videos"
                 color="bg-gradient-to-r from-orange-500 to-yellow-500"
-              />
+              /> </a>
             </div>
             
             <div className="flex flex-col md:flex-row p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md items-center justify-between transition-colors duration-300">

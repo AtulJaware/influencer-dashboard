@@ -1,13 +1,13 @@
 import React from 'react';
-import { Camera, VideoIcon, Award, Globe } from 'lucide-react';
+import { Camera, VideoIcon, Award, ClipboardList } from 'lucide-react';
 import studioImage from '../images/studio.webp'; 
 
 const AboutSection: React.FC = () => {
   const stats = [
     { label: 'Content Created', value: '500+', icon: <Camera size={24} /> },
-    { label: 'Countries Visited', value: '15+', icon: <Globe size={24} /> },
+    { label: 'Projects Delivered', value: '120+', icon: <ClipboardList size={24} /> },
     { label: 'Brand Collaborations', value: '80+', icon: <Award size={24} /> },
-    { label: 'Videos Produced', value: '320+', icon: <VideoIcon size={24} /> },
+    { label: 'Videos Produced', value: '350+', icon: <VideoIcon size={24} /> },
   ];
   
   return (

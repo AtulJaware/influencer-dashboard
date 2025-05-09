@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
                 <Instagram size={42} />
               </a>
               <a 
-                href="https://www.youtube.com/@pratikjawareVlogs" 
+                href="https://www.youtube.com/channel/UCfxMmGt0QZbJYCwrdUANdYA" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-600 dark:text-gray-300 hover:text-red-600 dark:hover:text-red-400 transition-colors"

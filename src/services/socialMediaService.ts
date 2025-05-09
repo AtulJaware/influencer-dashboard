@@ -1,24 +1,37 @@
 import { SocialMediaStats } from '../types/types';
 
-// Mocked API responses for demo purposes
 export const fetchSocialMediaStats = async (): Promise<SocialMediaStats> => {
-  // In a real implementation, these would be actual API calls
-  // For Instagram: https://graph.instagram.com/me?fields=id,username,media_count,followers_count&access_token=TOKEN
-  // For YouTube: https://www.googleapis.com/youtube/v3/channels?part=statistics&forUsername=PratikjawareVlogs&key=YOUR_API_KEY
-  
-  // Simulating API delay
-  await new Promise(resolve => setTimeout(resolve, 1000));
-  
+  const youtubeApiUrl = 'https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCfxMmGt0QZbJYCwrdUANdYA&key=AIzaSyC0Ex684aUCXbNtKL2B7FmazCiLaeYi9cM';
+
+  let youtube = {
+    subscribers: 78400,
+    videos: 352,
+    views: 37466404
+  };
+
+  try {
+    const res = await fetch(youtubeApiUrl);
+    const data = await res.json();
+
+    if (data?.items?.length > 0) {
+      const stats = data.items[0].statistics;
+      youtube = {
+        subscribers: parseInt(stats.subscriberCount, 10),
+        videos: parseInt(stats.videoCount, 10),
+        views: parseInt(stats.viewCount, 10)
+      };
+    }
+  } catch (error) {
+    console.error('Failed to fetch YouTube stats:', error);
+  }
+
+  // Instagram is still mocked
   return {
     instagram: {
-      followers: 254000,
+      followers: 256000,
       posts: 350,
       engagement: 80.7
     },
-    youtube: {
-      subscribers: 76500,
-      videos: 349,
-      views: 35660178
-    }
+    youtube
   };
 };
