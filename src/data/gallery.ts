@@ -9,6 +9,8 @@ import withsagarlokhande from '../images/with-sagar-lokhande.webp';
 import studio from '../images/studio.webp';
 import withrakshatai from '../images/withrakshatai.jpg';
 import cakecutting from '../images/cake-cutting.jpg';
+import yash from '../images/yash.jpg';
+import MLA from '../images/MLA.jpg';
 
 export const galleryImages: GalleryImage[] = [
   {
@@ -38,36 +40,48 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: '5',
+    url: MLA,
+    title: 'Hon. MLA Chainubhau Sancheti',
+    description: 'MLA Malkapur - Nandura Constituency, Maharashtra'
+  },
+  {
+    id: '6',
+    url: yash,
+    title: 'Yash Bhaiya Sancheti',
+    description: 'BJP Yuwa Morcha District President, Buldhana'
+  },
+  {
+    id: '7',
     url: bike,
     title: 'Shetkari Putra',
     description: 'Hardworking and dedicated to his work'
   },
   {
-    id: '6',
+    id: '8',
     url: withsopanmaharaj,
     title: 'Sopan Maharaj Kanerkar',
     description: 'With our spiritual master Sopan Maharaj Kanerkar'
   },
   {
-    id: '7',
+    id: '9',
     url: single,
     title: 'Game changer',
     description: 'Political Game changer Malkapur Nandura Constituency'
   },
   {
-    id: '8',
+    id: '10',
     url: withsagarlokhande,
     title: 'Creator Sagar Lokhande',
     description: 'With Social media influencer and creator Sagar Lokhande'
   },
   {
-    id: '9',
+    id: '11',
     url: studio,
     title: '',
     description: ''
   },
   {
-    id: '10',
+    id: '12',
     url: cakecutting,
     title: '200K followers celebration',
     description: 'Celebrating 200K followers at my farm'
